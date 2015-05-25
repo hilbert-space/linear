@@ -1,9 +1,16 @@
 [package]
 name = "linear"
-version = "0.0.1"
+version = "0.1.0"
 authors = ["Ivan Ukhov <ivan.ukhov@gmail.com>"]
 license = "MIT"
 repository = "https://github.com/stainless-steel/linear"
 homepage = "https://github.com/stainless-steel/linear"
 documentation = "https://stainless-steel.github.io/linear"
 description = "The package provides a linear-algebra toolbox."
+
+[dependencies]
+blas = "*"
+lapack = "*"
+
+[dev-dependencies]
+assert = "*"
