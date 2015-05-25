@@ -1,0 +1,15 @@
+language: rust
+sudo: required
+
+before_install:
+  - sudo apt-get install gfortran
+
+after_success:
+  - curl https://stainless-steel.github.io/travis/after_success.sh | bash
+
+env:
+  global:
+    secure: Sr4JnqXSoZrxfhacgCCnFl3YKJ+HK4EQxhEo/ocK+aflZVMrQqv3HxkyLhUmvUykcjQIlh9qtbw5lXNpTD9CEm+ByC214JKBiQ1Ivis8bhBfi9LHeMrXySmhBtfKVDRTAmFT2x29NuwNoyy9tadXhnb5SscoB1io+1kCZHWuihKieVv43k0ENqHzwkngjOwpBF8Z7CAM/FMdHFhGlCMIYK/wP3vfUllqTNXSiQP2F9EwZVqshxuNxY/nf1V26iaZlNQ//XPIqofBWtozaHljI3JjdrH/Cbu4UFf8hU/YtZf4yVYKSAi32G7xKdXWNPILQqztJ1WCN5o5qdZOQs5zKKp47XyPBsbc0qbLICbqrZYhRlSZfOJeAPajADlu6d1p8WGlYN6RNr4nuEuGgdFRDYb2cTp2cUO+rLa4zHrhJrEnlcS6IhKolM+jhPIghWMnuw/WN2T2dSM6BlCrfzvCPoK6IrPQlRO0e8hr6L5qYBVBM+pNVoQBNOIxGJGRxat4kJBg2swuw14txnb9xqEw/GV6OSnUKjRaEQ2wqtChvQeYfYNVNaU4QfhsqdXcHy0kuaiBPWjAVw7i7+dKYutsQa6IxeAbygt82BmPvwkaVjCNaI0jCv4H68WlyTtFp0rxuxtagFCG0JrL3+Adbm3S0iJAA52YTxfc8H0l9uvJP54=
+
+notifications:
+  email: false
