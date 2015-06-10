@@ -9,14 +9,10 @@ extern crate blas;
 extern crate lapack;
 
 mod core;
-mod eigen;
+mod decomposition;
 
-pub use core::matrix_product as multiply;
-pub use core::scalar_product as dot;
-pub use core::scaling as scale;
-pub use core::summation as add;
-
-pub use eigen::symmetric as symmetric_eigen;
+pub use core::{add, dot, multiply, scale};
+pub use decomposition::symmetric_eigen;
 
 /// An error.
 #[derive(Clone, Copy)]
