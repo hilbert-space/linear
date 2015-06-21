@@ -60,8 +60,6 @@ pub fn scale(alpha: f64, X: &mut [f64]) {
 
 #[cfg(test)]
 mod tests {
-    use assert;
-
     #[test]
     fn add() {
         let X = vec![1.0, 2.0, 3.0, 4.0];
@@ -69,12 +67,12 @@ mod tests {
 
         super::add(1.0, &X, &mut Y);
 
-        assert::equal(&Y, &vec![0.0, 4.0, 0.0, 8.0]);
+        assert_eq!(&Y, &vec![0.0, 4.0, 0.0, 8.0]);
     }
 
     #[test]
     fn dot() {
-        assert::equal(super::dot(&[10.0, -4.0], &[5.0, 2.0]), 42.0);
+        assert_eq!(super::dot(&[10.0, -4.0], &[5.0, 2.0]), 42.0);
     }
 
     #[test]
@@ -85,7 +83,7 @@ mod tests {
 
         super::multiply(1.0, &A, &B, 1.0, &mut C, 2);
 
-        assert::equal(&C, &vec![23.0, 30.0, 52.0, 68.0, 81.0, 106.0, 110.0, 144.0]);
+        assert_eq!(&C, &vec![23.0, 30.0, 52.0, 68.0, 81.0, 106.0, 110.0, 144.0]);
     }
 
     #[test]
@@ -94,6 +92,6 @@ mod tests {
 
         super::scale(2.0, &mut X);
 
-        assert::equal(&X, &vec![2.0, 4.0, 6.0, 8.0]);
+        assert_eq!(&X, &vec![2.0, 4.0, 6.0, 8.0]);
     }
 }
