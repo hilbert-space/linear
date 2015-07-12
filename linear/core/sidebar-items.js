@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["add","Sum up two matrices."],["dot","Compute the dot product of two vectors."],["multiply","Multiply two matrices."],["scale","Multiply a matrix by a scalar."]]});

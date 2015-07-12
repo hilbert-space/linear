@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["symmetric_eigen","Compute the eigendecomposition of a symmetric matrix."]]});
