@@ -1,6 +1,6 @@
 use blas;
 
-/// Add up two matrices.
+/// Sum up two matrices.
 ///
 /// The formula is as follows:
 ///
